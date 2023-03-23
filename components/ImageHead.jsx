@@ -9,7 +9,7 @@ export function ImageHead() {
           POS CLOUD
         </h1>
         <p className="animate__animated  animate__fadeIn animate__delay-3s">
-          "Un solución en la nube"
+          Un solución en la nube
         </p>
       </div>
       <div className={styles.imgA}></div>
