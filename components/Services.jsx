@@ -1,6 +1,7 @@
 import styles from "@/styles/Services.module.css";
 import { CardServices } from "./CardServices";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import Link from "next/link";
 
 export function Services() {
   return (
@@ -65,7 +66,7 @@ export function Services() {
                 </p>
                 <div className={styles.buttonCard}>
                   <button type="button" class="btn btn-outline-primary">
-                    <a href="/contact">Quiero mi demo</a>
+                    <Link href="/contact">Quiero mi demo</Link>
                   </button>
                 </div>
               </div>
@@ -96,7 +97,7 @@ export function Services() {
                 </p>
                 <div className={styles.buttonCard}>
                   <button type="button" class="btn btn-outline-primary">
-                    <a href="/contact">Quiero mi demo</a>
+                    <Link href="/contact">Quiero mi demo</Link>
                   </button>
                 </div>
               </div>
@@ -106,11 +107,11 @@ export function Services() {
       </div>
       <div className={styles.buttonDemo}>
         <div class="col-5 d-flex align-items-center">
-          <a href="/contact" class=" btn-lg w-50 ">
+          <Link href="/contact" class=" btn-lg w-50 ">
             <button type="button" class="btn btn-outline-light btn-lg w-75 ">
               Quiero mi demo
             </button>
-          </a>
+          </Link>
         </div>
         <div class="col-7">
           <h1 style={{ color: "white" }}>
