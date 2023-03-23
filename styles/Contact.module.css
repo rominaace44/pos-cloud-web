@@ -1,0 +1,6 @@
+.container {
+  text-align: center;
+  width: 100vw;
+  color: var(--color-primary);
+  margin-top: 3rem;
+}

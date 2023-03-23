@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: auto; */
+  border-bottom: solid 1px black;
+  z-index: 1;
+}
+.container h1 {
+  margin-left: 2rem;
+}
+.group a {
+  text-decoration: none;
+  color: black;
+}
+.group :hover {
+  font-weight: 700;
+}
+.group {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  justify-content: space-around;
+  font-size: large;
+}
+.burguerButton {
+  margin-right: 2rem;
+}
+
+.groupActive {
+  width: 100%;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  top: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.6s linear;
+}
+.groupActive a {
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem;
+  color: black;
+  font-size: larger;
+}
+.background {
+  position: absolute;
+  background-color: blue;
+  top: -1000px;
+  left: -1000px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.6s linear;
+}
+.backgroundActive {
+  position: absolute;
+  background-color: blue;
+  width: 100%;
+  height: 40vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 0 0 80% 0;
+  transition: all 0.6s linear;
+}
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .group {
+    /* width: 100vw;
+    justify-content: space-around; */
+    position: absolute;
+    top: -700px;
+    left: -2000px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: all 0.6s linear;
+  }
+  .group a {
+    text-decoration: none;
+    display: block;
+  }
+}
+
+@media (min-width: 700px) {
+  .burguerButton {
+    display: none;
+  }
+}
